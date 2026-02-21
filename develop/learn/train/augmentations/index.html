@@ -12,26 +12,28 @@
         <meta name="author" content="Roboflow">
       
       
-        <link rel="canonical" href="https://roboflow.github.io/rf-detr/develop/">
+        <link rel="canonical" href="https://roboflow.github.io/rf-detr/develop/learn/train/augmentations/">
       
       
+        <link rel="prev" href="../advanced/">
       
-        <link rel="next" href="learn/install/">
+      
+        <link rel="next" href="../loggers/">
       
       
         
       
       
-      <link rel="icon" href="assets/roboflow-logo.svg">
+      <link rel="icon" href="../../../assets/roboflow-logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>RF-DETR</title>
+        <title>Augmentations - RF-DETR</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -50,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/rf.css">
+      <link rel="stylesheet" href="../../../stylesheets/rf.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rf-detr-real-time-sota-detection-and-segmentation-model" class="md-skip">
+        <a href="#augmentations" class="md-skip">
           Skip to content
         </a>
       
@@ -100,14 +102,14 @@
 
     <!-- Link to home -->
     <a
-      href="."
+      href="../../.."
       title="RF-DETR"
       class="md-header__button md-logo"
       aria-label="RF-DETR"
       data-md-component="logo"
     >
       
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../../../assets/roboflow-logo.svg" alt="logo">
 
     </a>
 
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis" style="display: flex; align-items: center; gap: 0.5rem;">
             <a
-            href="."
+            href="../../.."
             title="RF-DETR"
             class="md-header__button md-logo"
             aria-label="RF-DETR"
@@ -136,11 +138,11 @@
             id="item-logo"
             >
             
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../../../assets/roboflow-logo.svg" alt="logo">
 
             </a>
             
-              Home
+              Augmentations
             
           </span>
         </div>
@@ -304,11 +306,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -325,11 +325,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="learn/install/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../install/" class="md-tabs__link">
           
   
   
@@ -349,7 +351,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="reference/rfdetr/" class="md-tabs__link">
+        <a href="../../../reference/rfdetr/" class="md-tabs__link">
           
   
   
@@ -367,7 +369,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="tutorials/" class="md-tabs__link">
+      <a href="../../../tutorials/" class="md-tabs__link">
         
   
   
@@ -416,9 +418,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -429,9 +429,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="RF-DETR" class="md-nav__button md-logo" aria-label="RF-DETR" data-md-component="logo">
+    <a href="../../.." title="RF-DETR" class="md-nav__button md-logo" aria-label="RF-DETR" data-md-component="logo">
       
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../../../assets/roboflow-logo.svg" alt="logo">
 
     </a>
     RF-DETR
@@ -455,37 +455,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -501,98 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quickstart
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorials" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tutorials
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmarks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benchmarks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmarks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Detection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#segmentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Segmentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -601,26 +482,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -638,7 +522,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -656,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/install/" class="md-nav__link">
+      <a href="../../install/" class="md-nav__link">
         
   
   
@@ -736,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/run/detection/" class="md-nav__link">
+      <a href="../../run/detection/" class="md-nav__link">
         
   
   
@@ -764,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/run/segmentation/" class="md-nav__link">
+      <a href="../../run/segmentation/" class="md-nav__link">
         
   
   
@@ -797,8 +681,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -807,13 +693,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -834,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -852,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -880,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/dataset-formats/" class="md-nav__link">
+      <a href="../dataset-formats/" class="md-nav__link">
         
   
   
@@ -908,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/training-parameters/" class="md-nav__link">
+      <a href="../training-parameters/" class="md-nav__link">
         
   
   
@@ -936,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/advanced/" class="md-nav__link">
+      <a href="../advanced/" class="md-nav__link">
         
   
   
@@ -961,10 +845,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="learn/train/augmentations/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Augmentations
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -980,6 +891,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Built-in Presets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Built-in Presets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommendations-by-dataset-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations by Dataset Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-vs-pixel-level-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geometric vs. Pixel-Level Transforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-custom-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: Custom Transforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -992,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/loggers/" class="md-nav__link">
+      <a href="../loggers/" class="md-nav__link">
         
   
   
@@ -1028,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/export/" class="md-nav__link">
+      <a href="../../export/" class="md-nav__link">
         
   
   
@@ -1056,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/deploy/" class="md-nav__link">
+      <a href="../../deploy/" class="md-nav__link">
         
   
   
@@ -1084,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/benchmarks/" class="md-nav__link">
+      <a href="../../benchmarks/" class="md-nav__link">
         
   
   
@@ -1171,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/rfdetr/" class="md-nav__link">
+      <a href="../../../reference/rfdetr/" class="md-nav__link">
         
   
   
@@ -1251,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/nano/" class="md-nav__link">
+      <a href="../../../reference/nano/" class="md-nav__link">
         
   
   
@@ -1279,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/small/" class="md-nav__link">
+      <a href="../../../reference/small/" class="md-nav__link">
         
   
   
@@ -1307,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/base/" class="md-nav__link">
+      <a href="../../../reference/base/" class="md-nav__link">
         
   
   
@@ -1335,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/medium/" class="md-nav__link">
+      <a href="../../../reference/medium/" class="md-nav__link">
         
   
   
@@ -1363,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/large/" class="md-nav__link">
+      <a href="../../../reference/large/" class="md-nav__link">
         
   
   
@@ -1391,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/xlarge/" class="md-nav__link">
+      <a href="../../../reference/xlarge/" class="md-nav__link">
         
   
   
@@ -1419,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/2xlarge/" class="md-nav__link">
+      <a href="../../../reference/2xlarge/" class="md-nav__link">
         
   
   
@@ -1447,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/large_deprecated/" class="md-nav__link">
+      <a href="../../../reference/large_deprecated/" class="md-nav__link">
         
   
   
@@ -1535,7 +1571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_nano/" class="md-nav__link">
+      <a href="../../../reference/seg_nano/" class="md-nav__link">
         
   
   
@@ -1563,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_small/" class="md-nav__link">
+      <a href="../../../reference/seg_small/" class="md-nav__link">
         
   
   
@@ -1591,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_medium/" class="md-nav__link">
+      <a href="../../../reference/seg_medium/" class="md-nav__link">
         
   
   
@@ -1619,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_large/" class="md-nav__link">
+      <a href="../../../reference/seg_large/" class="md-nav__link">
         
   
   
@@ -1647,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_xlarge/" class="md-nav__link">
+      <a href="../../../reference/seg_xlarge/" class="md-nav__link">
         
   
   
@@ -1675,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_2xlarge/" class="md-nav__link">
+      <a href="../../../reference/seg_2xlarge/" class="md-nav__link">
         
   
   
@@ -1703,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_preview/" class="md-nav__link">
+      <a href="../../../reference/seg_preview/" class="md-nav__link">
         
   
   
@@ -1791,7 +1827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/train_config/" class="md-nav__link">
+      <a href="../../../reference/train_config/" class="md-nav__link">
         
   
   
@@ -1819,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/segmentation_train_config/" class="md-nav__link">
+      <a href="../../../reference/segmentation_train_config/" class="md-nav__link">
         
   
   
@@ -1862,7 +1898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/" class="md-nav__link">
+      <a href="../../../tutorials/" class="md-nav__link">
         
   
   
@@ -1917,8 +1953,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1938,10 +1972,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
+  <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install
+        Quick Start
       
     </span>
   </a>
@@ -1949,55 +1983,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
+  <a href="#built-in-presets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quickstart
+        Built-in Presets
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorials" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tutorials
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmarks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benchmarks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmarks">
+    <nav class="md-nav" aria-label="Built-in Presets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#detection" class="md-nav__link">
+  <a href="#recommendations-by-dataset-size" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Detection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#segmentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Segmentation
+        Recommendations by Dataset Size
       
     </span>
   </a>
@@ -2006,6 +2007,72 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-vs-pixel-level-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geometric vs. Pixel-Level Transforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-custom-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: Custom Transforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2023,234 +2090,138 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-<h1 id="rf-detr-real-time-sota-detection-and-segmentation-model">RF-DETR: Real-Time SOTA Detection and Segmentation Model<a class="headerlink" href="#rf-detr-real-time-sota-detection-and-segmentation-model" title="Permanent link">&para;</a></h1>
-<p>RF-DETR is a real-time transformer architecture for object detection and instance segmentation developed by Roboflow. Built on a DINOv2 vision transformer backbone, RF-DETR delivers state-of-the-art accuracy and latency trade-offs on Microsoft COCO and RF100-VL.</p>
-<p>RF-DETR uses a DINOv2 vision transformer backbone and supports both detection and instance segmentation in a single, consistent API. All core models and code are released under the Apache 2.0 license.</p>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
-<p>You can install and use <code>rfdetr</code> in a <a href="https://www.python.org/"><strong>Python&gt;=3.10</strong></a> environment. For detailed installation instructions, including installing from source, and setting up a local development environment, check out our <a href="learn/install/">install</a> page.</p>
-<div class="admonition example">
-<p class="admonition-title">Installation</p>
-<p><a href="https://badge.fury.io/py/rfdetr"><img alt="version" src="https://badge.fury.io/py/rfdetr.svg" /></a>
-<a href="https://badge.fury.io/py/rfdetr"><img alt="python-version" src="https://img.shields.io/pypi/pyversions/rfdetr" /></a>
-<a href="https://github.com/roboflow/rfdetr/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/pypi/l/rfdetr" /></a>
-<a href="https://pypistats.org/packages/rfdetr"><img alt="downloads" src="https://img.shields.io/pypi/dm/rfdetr" /></a></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">uv</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rfdetr
+<h1 id="augmentations">Augmentations<a class="headerlink" href="#augmentations" title="Permanent link">&para;</a></h1>
+<p>RF-DETR supports custom data augmentations via <a href="https://albumentations.ai/">Albumentations</a>, with automatic bounding box and mask handling for geometric transforms.</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<p>Pass <code>aug_config</code> to your training call. Import one of the built-in presets:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rfdetr</span><span class="w"> </span><span class="kn">import</span> <span class="n">RFDETRBase</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rfdetr.datasets.aug_config</span><span class="w"> </span><span class="kn">import</span> <span class="n">AUG_CONSERVATIVE</span><span class="p">,</span> <span class="n">AUG_AGGRESSIVE</span><span class="p">,</span> <span class="n">AUG_AERIAL</span><span class="p">,</span> <span class="n">AUG_INDUSTRIAL</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">RFDETRBase</span><span class="p">()</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">dataset_dir</span><span class="o">=</span><span class="s2">&quot;path/to/dataset&quot;</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">aug_config</span><span class="o">=</span><span class="n">AUG_CONSERVATIVE</span><span class="p">)</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>rfdetr
+<p>Or pass a custom dict directly — keys are Albumentations transform names:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">dataset_dir</span><span class="o">=</span><span class="s2">&quot;path/to/dataset&quot;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">aug_config</span><span class="o">=</span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="s2">&quot;HorizontalFlip&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        <span class="s2">&quot;Rotate&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">},</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="s2">&quot;GaussianBlur&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">},</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">},</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">)</span>
 </span></code></pre></div>
-<p>For uv projects:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uv<span class="w"> </span>add<span class="w"> </span>rfdetr
-</span></code></pre></div>
-</div>
-</div>
-</div>
-</div>
-<h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>Run Detection Models</strong></p>
-<hr />
-<p>Load and run pre-trained RF-DETR detection models.</p>
-<p><a href="learn/run/detection/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
-</li>
-<li>
-<p><strong>Run Segmentation Models</strong></p>
-<hr />
-<p>Load and run pre-trained RF-DETR-Seg segmentation models.</p>
-<p><a href="learn/run/segmentation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
-</li>
-<li>
-<p><strong>Train Models</strong></p>
-<hr />
-<p>Learn how to fine-tune RF-DETR models for detection and segmentation.</p>
-<p><a href="/learn/train/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
-</li>
-</ul>
-</div>
-<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>Train RF-DETR on a Custom Dataset. Video</strong></p>
-<hr />
-<p><img alt="" src="https://i.ytimg.com/vi/-OvpdLAElFA/maxresdefault.jpg" /></p>
-<p>End to end walkthrough of training RF-DETR on a custom dataset.</p>
-<p><a href="https://www.youtube.com/watch?v=-OvpdLAElFA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Watch the video</a></p>
-</li>
-<li>
-<p><strong>Deploy RF-DETR to NVIDIA Jetson. Article</strong></p>
-<hr />
-<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/06/inst-3-.png" /></p>
-<p>Instructions for deploying RF-DETR on NVIDIA Jetson with Roboflow Inference.</p>
-<p><a href="https://blog.roboflow.com/how-to-deploy-rf-detr-to-an-nvidia-jetson/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the tutorial</a></p>
-</li>
-<li>
-<p><strong>Train and Deploy RF-DETR with Roboflow</strong></p>
-<hr />
-<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/03/img-blog-nycerebro-2.png" /></p>
-<p>Cloud training and hardware deployment workflow using Roboflow.</p>
-<p><a href="https://blog.roboflow.com/train-and-deploy-rf-detr-models-with-roboflow/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the tutorial</a></p>
-</li>
-</ul>
-</div>
-<h2 id="benchmarks">Benchmarks<a class="headerlink" href="#benchmarks" title="Permanent link">&para;</a></h2>
-<p>RF-DETR achieves the best accuracy–latency trade-off among real-time object detection and instance segmentation models — both on COCO and on the more demanding RF100-VL benchmark (domain adaptability). For detailed benchmark tables and methodology, check out our <a href="learn/benchmarks/">benchmarks</a> page.</p>
-<h3 id="detection">Detection<a class="headerlink" href="#detection" title="Permanent link">&para;</a></h3>
-<p><img alt="Pareto front – detection" src="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png" style="max-width: 840px; height: auto;" /></p>
+<p>To disable augmentations: <code>aug_config={}</code>. Omitting it uses the default (horizontal flip at 50%).</p>
+<h2 id="built-in-presets">Built-in Presets<a class="headerlink" href="#built-in-presets" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Architecture</th>
-<th>COCO AP<sub>50</sub></th>
-<th>COCO AP<sub>50:95</sub></th>
-<th>RF100VL AP<sub>50</sub></th>
-<th>RF100VL AP<sub>50:95</sub></th>
-<th>Latency (ms)</th>
-<th>Params (M)</th>
-<th>Resolution</th>
+<th>Preset</th>
+<th>Best for</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>RF-DETR-N</td>
-<td>67.6</td>
-<td>48.4</td>
-<td>85.0</td>
-<td>57.7</td>
-<td>2.3</td>
-<td>30.5</td>
-<td>384×384</td>
+<td><code>AUG_CONSERVATIVE</code></td>
+<td>Small datasets (under 500 images)</td>
 </tr>
 <tr>
-<td>RF-DETR-S</td>
-<td>72.1</td>
-<td>53.0</td>
-<td>86.7</td>
-<td>60.2</td>
-<td>3.5</td>
-<td>32.1</td>
-<td>512×512</td>
+<td><code>AUG_AGGRESSIVE</code></td>
+<td>Large datasets (2000+ images)</td>
 </tr>
 <tr>
-<td>RF-DETR-M</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>87.4</td>
-<td>61.2</td>
-<td>4.4</td>
-<td>33.7</td>
-<td>576×576</td>
+<td><code>AUG_AERIAL</code></td>
+<td>Satellite / overhead imagery</td>
 </tr>
 <tr>
-<td>RF-DETR-L</td>
-<td>75.1</td>
-<td>56.5</td>
-<td>88.2</td>
-<td>62.2</td>
-<td>6.8</td>
-<td>33.9</td>
-<td>704×704</td>
-</tr>
-<tr>
-<td>RF-DETR-XL</td>
-<td>77.4</td>
-<td>58.6</td>
-<td>88.5</td>
-<td>62.9</td>
-<td>11.5</td>
-<td>126.4</td>
-<td>700×700</td>
-</tr>
-<tr>
-<td>RF-DETR-2XL</td>
-<td>78.5</td>
-<td>60.1</td>
-<td>89.0</td>
-<td>63.2</td>
-<td>17.2</td>
-<td>126.9</td>
-<td>880×880</td>
+<td><code>AUG_INDUSTRIAL</code></td>
+<td>Manufacturing / inspection data</td>
 </tr>
 </tbody>
 </table>
-<h3 id="segmentation">Segmentation<a class="headerlink" href="#segmentation" title="Permanent link">&para;</a></h3>
-<p><img alt="Pareto front – segmentation" src="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_instance_segmentation.png" style="max-width: 840px; height: auto;" /></p>
+<p>All presets are plain dicts — inspect or extend them before passing:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">rfdetr.datasets.aug_config</span><span class="w"> </span><span class="kn">import</span> <span class="n">AUG_AGGRESSIVE</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">my_config</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">AUG_AGGRESSIVE</span><span class="p">,</span> <span class="s2">&quot;VerticalFlip&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">}}</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">dataset_dir</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="n">aug_config</span><span class="o">=</span><span class="n">my_config</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="recommendations-by-dataset-size">Recommendations by Dataset Size<a class="headerlink" href="#recommendations-by-dataset-size" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Architecture</th>
-<th>COCO AP<sub>50</sub></th>
-<th>COCO AP<sub>50:95</sub></th>
-<th>Latency (ms)</th>
-<th>Params (M)</th>
-<th>Resolution</th>
+<th>Dataset Size</th>
+<th>Recommended preset</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>RF-DETR-Seg-N</td>
-<td>63.0</td>
-<td>40.3</td>
-<td>3.4</td>
-<td>33.6</td>
-<td>312×312</td>
+<td>Under 500 images</td>
+<td><code>AUG_CONSERVATIVE</code> — flip + mild brightness/contrast</td>
 </tr>
 <tr>
-<td>RF-DETR-Seg-S</td>
-<td>66.2</td>
-<td>43.1</td>
-<td>4.4</td>
-<td>33.7</td>
-<td>384×384</td>
+<td>500–2000 images</td>
+<td>Default or <code>AUG_CONSERVATIVE</code> with a few extra transforms added</td>
 </tr>
 <tr>
-<td>RF-DETR-Seg-M</td>
-<td>68.4</td>
-<td>45.3</td>
-<td>5.9</td>
-<td>35.7</td>
-<td>432×432</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-L</td>
-<td>70.5</td>
-<td>47.1</td>
-<td>8.8</td>
-<td>36.2</td>
-<td>504×504</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-XL</td>
-<td>72.2</td>
-<td>48.8</td>
-<td>13.5</td>
-<td>38.1</td>
-<td>624×624</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-2XL</td>
-<td>73.1</td>
-<td>49.9</td>
-<td>21.8</td>
-<td>38.6</td>
-<td>768×768</td>
+<td>2000+ images</td>
+<td><code>AUG_AGGRESSIVE</code> — rotations, affine, color jitter</td>
 </tr>
 </tbody>
 </table>
+<h2 id="geometric-vs-pixel-level-transforms">Geometric vs. Pixel-Level Transforms<a class="headerlink" href="#geometric-vs-pixel-level-transforms" title="Permanent link">&para;</a></h2>
+<p>RF-DETR automatically handles bounding boxes for <strong>geometric transforms</strong> (flips, rotations, crops, affine, perspective). <strong>Pixel-level transforms</strong> (blur, noise, color) preserve coordinates unchanged. You don't need to handle this distinction — it's automatic based on the transform name.</p>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Start Conservative</p>
+<p>Begin with simple augmentations (horizontal flip, small brightness changes) and gradually add more as needed.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Geometric Transforms</p>
+<p>Be careful with aggressive rotations and crops on datasets where object orientation matters (e.g., text detection, oriented objects).</p>
+</div>
+<ul>
+<li><strong>CPU-bound:</strong> Augmentations run on CPU during data loading — more transforms means slower loading</li>
+<li><strong>Use <code>num_workers</code>:</strong> Parallelize augmentation across data loader workers</li>
+<li><strong>Monitor training mAP vs validation mAP:</strong> With strong augmentations it's normal for training mAP to be lower — validation uses original images while training uses augmented (harder) ones</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<p><strong>Training is slow</strong> — reduce the number of transforms or increase <code>num_workers</code>.</p>
+<p><strong>Boxes disappear after augmentation</strong> — aggressive rotations or crops can push boxes outside the image boundary. Reduce rotation angles or avoid large crops.</p>
+<p><strong>Model not improving</strong> — augmentations may be too aggressive. Start with <code>AUG_CONSERVATIVE</code> and add transforms gradually. Try removing geometric transforms first to isolate the cause.</p>
+<p><strong>Validation mAP is much higher than training mAP</strong> — this is expected with strong augmentations and not a bug. See the monitoring tip above.</p>
+<h2 id="advanced-custom-transforms">Advanced: Custom Transforms<a class="headerlink" href="#advanced-custom-transforms" title="Permanent link">&para;</a></h2>
+<p>Any Albumentations transform works by name. If your custom transform is geometric, register it in <code>rfdetr/datasets/transforms.py</code> so boxes are updated automatically:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">GEOMETRIC_TRANSFORMS</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="o">...</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="s2">&quot;YourCustomTransform&quot;</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Then use it like any other transform:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">dataset_dir</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">aug_config</span><span class="o">=</span><span class="p">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="s2">&quot;HorizontalFlip&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;YourCustomTransform&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;param&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">},</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">},</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://albumentations.ai/docs/">Albumentations docs</a></li>
+<li><a href="https://albumentations.ai/docs/api_reference/augmentations/">All available transforms</a></li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../loggers/#logging-with-tensorboard">Monitor training with TensorBoard</a></li>
+<li><a href="../advanced/#early-stopping">Use early stopping</a> to prevent overfitting</li>
+<li><a href="../../export/">Export your trained model</a> for deployment</li>
+</ul>
 
 
 
@@ -2258,13 +2229,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -2360,10 +2326,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.tabs.link", "content.code.copy", "navigation.expand", "navigation.tabs", "content.code.annotate", "navigation.tracking", "content.tooltips", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.expand", "navigation.tabs", "content.code.annotate", "navigation.tracking", "content.tooltips", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

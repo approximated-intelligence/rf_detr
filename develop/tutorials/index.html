@@ -12,26 +12,26 @@
         <meta name="author" content="Roboflow">
       
       
-        <link rel="canonical" href="https://roboflow.github.io/rf-detr/develop/">
+        <link rel="canonical" href="https://roboflow.github.io/rf-detr/develop/tutorials/">
       
       
+        <link rel="prev" href="../reference/segmentation_train_config/">
       
-        <link rel="next" href="learn/install/">
       
       
         
       
       
-      <link rel="icon" href="assets/roboflow-logo.svg">
+      <link rel="icon" href="../assets/roboflow-logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>RF-DETR</title>
+        <title>Tutorials - RF-DETR</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -50,11 +50,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/rf.css">
+      <link rel="stylesheet" href="../stylesheets/rf.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rf-detr-real-time-sota-detection-and-segmentation-model" class="md-skip">
+        <a href="#tutorials" class="md-skip">
           Skip to content
         </a>
       
@@ -100,14 +100,14 @@
 
     <!-- Link to home -->
     <a
-      href="."
+      href=".."
       title="RF-DETR"
       class="md-header__button md-logo"
       aria-label="RF-DETR"
       data-md-component="logo"
     >
       
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../assets/roboflow-logo.svg" alt="logo">
 
     </a>
 
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis" style="display: flex; align-items: center; gap: 0.5rem;">
             <a
-            href="."
+            href=".."
             title="RF-DETR"
             class="md-header__button md-logo"
             aria-label="RF-DETR"
@@ -136,11 +136,11 @@
             id="item-logo"
             >
             
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../assets/roboflow-logo.svg" alt="logo">
 
             </a>
             
-              Home
+              Tutorials
             
           </span>
         </div>
@@ -304,11 +304,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -329,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="learn/install/" class="md-tabs__link">
+        <a href="../learn/install/" class="md-tabs__link">
           
   
   
@@ -349,7 +347,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="reference/rfdetr/" class="md-tabs__link">
+        <a href="../reference/rfdetr/" class="md-tabs__link">
           
   
   
@@ -365,9 +363,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="tutorials/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -429,9 +429,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="RF-DETR" class="md-nav__button md-logo" aria-label="RF-DETR" data-md-component="logo">
+    <a href=".." title="RF-DETR" class="md-nav__button md-logo" aria-label="RF-DETR" data-md-component="logo">
       
-  <img src="assets/roboflow-logo.svg" alt="logo">
+  <img src="../assets/roboflow-logo.svg" alt="logo">
 
     </a>
     RF-DETR
@@ -455,37 +455,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -501,98 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quickstart
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorials" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tutorials
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmarks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benchmarks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmarks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Detection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#segmentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Segmentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -656,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/install/" class="md-nav__link">
+      <a href="../learn/install/" class="md-nav__link">
         
   
   
@@ -736,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/run/detection/" class="md-nav__link">
+      <a href="../learn/run/detection/" class="md-nav__link">
         
   
   
@@ -764,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/run/segmentation/" class="md-nav__link">
+      <a href="../learn/run/segmentation/" class="md-nav__link">
         
   
   
@@ -852,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/" class="md-nav__link">
+      <a href="../learn/train/" class="md-nav__link">
         
   
   
@@ -880,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/dataset-formats/" class="md-nav__link">
+      <a href="../learn/train/dataset-formats/" class="md-nav__link">
         
   
   
@@ -908,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/training-parameters/" class="md-nav__link">
+      <a href="../learn/train/training-parameters/" class="md-nav__link">
         
   
   
@@ -936,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/advanced/" class="md-nav__link">
+      <a href="../learn/train/advanced/" class="md-nav__link">
         
   
   
@@ -964,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/augmentations/" class="md-nav__link">
+      <a href="../learn/train/augmentations/" class="md-nav__link">
         
   
   
@@ -992,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/train/loggers/" class="md-nav__link">
+      <a href="../learn/train/loggers/" class="md-nav__link">
         
   
   
@@ -1028,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/export/" class="md-nav__link">
+      <a href="../learn/export/" class="md-nav__link">
         
   
   
@@ -1056,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/deploy/" class="md-nav__link">
+      <a href="../learn/deploy/" class="md-nav__link">
         
   
   
@@ -1084,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="learn/benchmarks/" class="md-nav__link">
+      <a href="../learn/benchmarks/" class="md-nav__link">
         
   
   
@@ -1171,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/rfdetr/" class="md-nav__link">
+      <a href="../reference/rfdetr/" class="md-nav__link">
         
   
   
@@ -1251,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/nano/" class="md-nav__link">
+      <a href="../reference/nano/" class="md-nav__link">
         
   
   
@@ -1279,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/small/" class="md-nav__link">
+      <a href="../reference/small/" class="md-nav__link">
         
   
   
@@ -1307,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/base/" class="md-nav__link">
+      <a href="../reference/base/" class="md-nav__link">
         
   
   
@@ -1335,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/medium/" class="md-nav__link">
+      <a href="../reference/medium/" class="md-nav__link">
         
   
   
@@ -1363,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/large/" class="md-nav__link">
+      <a href="../reference/large/" class="md-nav__link">
         
   
   
@@ -1391,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/xlarge/" class="md-nav__link">
+      <a href="../reference/xlarge/" class="md-nav__link">
         
   
   
@@ -1419,7 +1300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/2xlarge/" class="md-nav__link">
+      <a href="../reference/2xlarge/" class="md-nav__link">
         
   
   
@@ -1447,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/large_deprecated/" class="md-nav__link">
+      <a href="../reference/large_deprecated/" class="md-nav__link">
         
   
   
@@ -1535,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_nano/" class="md-nav__link">
+      <a href="../reference/seg_nano/" class="md-nav__link">
         
   
   
@@ -1563,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_small/" class="md-nav__link">
+      <a href="../reference/seg_small/" class="md-nav__link">
         
   
   
@@ -1591,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_medium/" class="md-nav__link">
+      <a href="../reference/seg_medium/" class="md-nav__link">
         
   
   
@@ -1619,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_large/" class="md-nav__link">
+      <a href="../reference/seg_large/" class="md-nav__link">
         
   
   
@@ -1647,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_xlarge/" class="md-nav__link">
+      <a href="../reference/seg_xlarge/" class="md-nav__link">
         
   
   
@@ -1675,7 +1556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_2xlarge/" class="md-nav__link">
+      <a href="../reference/seg_2xlarge/" class="md-nav__link">
         
   
   
@@ -1703,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/seg_preview/" class="md-nav__link">
+      <a href="../reference/seg_preview/" class="md-nav__link">
         
   
   
@@ -1791,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/train_config/" class="md-nav__link">
+      <a href="../reference/train_config/" class="md-nav__link">
         
   
   
@@ -1819,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/segmentation_train_config/" class="md-nav__link">
+      <a href="../reference/segmentation_train_config/" class="md-nav__link">
         
   
   
@@ -1859,10 +1740,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="tutorials/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1878,6 +1768,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1919,7 +1810,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1930,86 +1821,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quickstart
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorials" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tutorials
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmarks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benchmarks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmarks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Detection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#segmentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Segmentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2031,226 +1842,68 @@
   
 
 
-<h1 id="rf-detr-real-time-sota-detection-and-segmentation-model">RF-DETR: Real-Time SOTA Detection and Segmentation Model<a class="headerlink" href="#rf-detr-real-time-sota-detection-and-segmentation-model" title="Permanent link">&para;</a></h1>
-<p>RF-DETR is a real-time transformer architecture for object detection and instance segmentation developed by Roboflow. Built on a DINOv2 vision transformer backbone, RF-DETR delivers state-of-the-art accuracy and latency trade-offs on Microsoft COCO and RF100-VL.</p>
-<p>RF-DETR uses a DINOv2 vision transformer backbone and supports both detection and instance segmentation in a single, consistent API. All core models and code are released under the Apache 2.0 license.</p>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
-<p>You can install and use <code>rfdetr</code> in a <a href="https://www.python.org/"><strong>Python&gt;=3.10</strong></a> environment. For detailed installation instructions, including installing from source, and setting up a local development environment, check out our <a href="learn/install/">install</a> page.</p>
-<div class="admonition example">
-<p class="admonition-title">Installation</p>
-<p><a href="https://badge.fury.io/py/rfdetr"><img alt="version" src="https://badge.fury.io/py/rfdetr.svg" /></a>
-<a href="https://badge.fury.io/py/rfdetr"><img alt="python-version" src="https://img.shields.io/pypi/pyversions/rfdetr" /></a>
-<a href="https://github.com/roboflow/rfdetr/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/pypi/l/rfdetr" /></a>
-<a href="https://pypistats.org/packages/rfdetr"><img alt="downloads" src="https://img.shields.io/pypi/dm/rfdetr" /></a></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">uv</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>rfdetr
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>rfdetr
-</span></code></pre></div>
-<p>For uv projects:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uv<span class="w"> </span>add<span class="w"> </span>rfdetr
-</span></code></pre></div>
-</div>
-</div>
-</div>
-</div>
-<h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
+<h1 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h1>
+<p>Use the resources below to learn how to train, build with, and deploy RF-DETR models both in the cloud and on your own hardware.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Run Detection Models</strong></p>
+<p><strong>SOTA Instance Segmentation with RF-DETR Seg (Preview) [October 2025]</strong></p>
 <hr />
-<p>Load and run pre-trained RF-DETR detection models.</p>
-<p><a href="learn/run/detection/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
+<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/10/rfdetr-seg.png" /></p>
+<p>Read more about the RF-DETR Segmentation architecture and how to train an RF-DETR Seg (Preview) model.</p>
+<p><a href="https://blog.roboflow.com/rf-detr-segmentation-preview/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Learn more</a></p>
 </li>
 <li>
-<p><strong>Run Segmentation Models</strong></p>
+<p><strong>Announcing RF-DETR Nano, Small, and Medium [July 2025]</strong></p>
 <hr />
-<p>Load and run pre-trained RF-DETR-Seg segmentation models.</p>
-<p><a href="learn/run/segmentation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
+<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/07/img-blog-rf-detr-1.png" /></p>
+<p>Read more about the state-of-the-art RF-DETR Nano, Small, and Medium models we released in July 2025.</p>
+<p><a href="https://blog.roboflow.com/rf-detr-nano-small-medium/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Learn more</a></p>
 </li>
 <li>
-<p><strong>Train Models</strong></p>
-<hr />
-<p>Learn how to fine-tune RF-DETR models for detection and segmentation.</p>
-<p><a href="/learn/train/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Tutorial</a></p>
-</li>
-</ul>
-</div>
-<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>Train RF-DETR on a Custom Dataset. Video</strong></p>
+<p><strong>RF-DETR: How to Train SOTA for Object Detection on a Custom Dataset [video]</strong></p>
 <hr />
 <p><img alt="" src="https://i.ytimg.com/vi/-OvpdLAElFA/maxresdefault.jpg" /></p>
-<p>End to end walkthrough of training RF-DETR on a custom dataset.</p>
+<p>Learn how to train an RF-DETR model on a custom dataset.</p>
 <p><a href="https://www.youtube.com/watch?v=-OvpdLAElFA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Watch the video</a></p>
 </li>
 <li>
-<p><strong>Deploy RF-DETR to NVIDIA Jetson. Article</strong></p>
+<p><strong>How to Train RF-DETR on a Custom Dataset [article]</strong></p>
+<hr />
+<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/03/img-blog-how-to-send-slack-notification-workflows-v4-1.png" /></p>
+<p>Learn how to train an RF-DETR model on a custom dataset.</p>
+<p><a href="https://blog.roboflow.com/train-rf-detr-on-a-custom-dataset/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the guide</a></p>
+</li>
+<li>
+<p><strong>Deploy RF-DETR on iOS [tutorial &amp; example application]</strong></p>
+<hr />
+<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/07/img-blog-deep-learning-solves-frustrations--5--min.png" /></p>
+<p>Read this guide to learn how to run RF-DETR models on an iPhone using the Roboflow iOS SDK.</p>
+<p><a href="https://blog.roboflow.com/ios-rf-detr-nano/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Get started</a></p>
+</li>
+<li>
+<p><strong>How to Deploy RF-DETR to an NVIDIA Jetson [article]</strong></p>
 <hr />
 <p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/06/inst-3-.png" /></p>
-<p>Instructions for deploying RF-DETR on NVIDIA Jetson with Roboflow Inference.</p>
+<p>Learn how to deploy an RF-DETR model to an NVIDIA Jetson using Roboflow Inference.</p>
 <p><a href="https://blog.roboflow.com/how-to-deploy-rf-detr-to-an-nvidia-jetson/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the tutorial</a></p>
 </li>
 <li>
-<p><strong>Train and Deploy RF-DETR with Roboflow</strong></p>
+<p><strong>Train and Deploy RF-DETR Models with Roboflow</strong></p>
 <hr />
 <p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/03/img-blog-nycerebro-2.png" /></p>
-<p>Cloud training and hardware deployment workflow using Roboflow.</p>
-<p><a href="https://blog.roboflow.com/train-and-deploy-rf-detr-models-with-roboflow/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the tutorial</a></p>
+<p>Learn how to train RF-DETR models in the cloud with Roboflow and deploy your models on your own hardware with Roboflow Inference and Workflows.</p>
+<p><a href="https://blog.roboflow.com/train-deploy-rf-detr/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Get started</a></p>
+</li>
+<li>
+<p><strong>RF-DETR: A SOTA Real-Time Object Detection Model</strong></p>
+<hr />
+<p><img alt="" src="https://blog.roboflow.com/content/images/size/w1000/format/webp/2025/03/img-blog-nycerebro--2--min.png" /></p>
+<p>Read our announcement for RF-DETR, the first real-time model to achieve 60+ mean Average Precision when benchmarked on the COCO dataset.</p>
+<p><a href="https://blog.roboflow.com/rf-detr/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read the announcement</a></p>
 </li>
 </ul>
 </div>
-<h2 id="benchmarks">Benchmarks<a class="headerlink" href="#benchmarks" title="Permanent link">&para;</a></h2>
-<p>RF-DETR achieves the best accuracy–latency trade-off among real-time object detection and instance segmentation models — both on COCO and on the more demanding RF100-VL benchmark (domain adaptability). For detailed benchmark tables and methodology, check out our <a href="learn/benchmarks/">benchmarks</a> page.</p>
-<h3 id="detection">Detection<a class="headerlink" href="#detection" title="Permanent link">&para;</a></h3>
-<p><img alt="Pareto front – detection" src="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_object_detection.png" style="max-width: 840px; height: auto;" /></p>
-<table>
-<thead>
-<tr>
-<th>Architecture</th>
-<th>COCO AP<sub>50</sub></th>
-<th>COCO AP<sub>50:95</sub></th>
-<th>RF100VL AP<sub>50</sub></th>
-<th>RF100VL AP<sub>50:95</sub></th>
-<th>Latency (ms)</th>
-<th>Params (M)</th>
-<th>Resolution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RF-DETR-N</td>
-<td>67.6</td>
-<td>48.4</td>
-<td>85.0</td>
-<td>57.7</td>
-<td>2.3</td>
-<td>30.5</td>
-<td>384×384</td>
-</tr>
-<tr>
-<td>RF-DETR-S</td>
-<td>72.1</td>
-<td>53.0</td>
-<td>86.7</td>
-<td>60.2</td>
-<td>3.5</td>
-<td>32.1</td>
-<td>512×512</td>
-</tr>
-<tr>
-<td>RF-DETR-M</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>87.4</td>
-<td>61.2</td>
-<td>4.4</td>
-<td>33.7</td>
-<td>576×576</td>
-</tr>
-<tr>
-<td>RF-DETR-L</td>
-<td>75.1</td>
-<td>56.5</td>
-<td>88.2</td>
-<td>62.2</td>
-<td>6.8</td>
-<td>33.9</td>
-<td>704×704</td>
-</tr>
-<tr>
-<td>RF-DETR-XL</td>
-<td>77.4</td>
-<td>58.6</td>
-<td>88.5</td>
-<td>62.9</td>
-<td>11.5</td>
-<td>126.4</td>
-<td>700×700</td>
-</tr>
-<tr>
-<td>RF-DETR-2XL</td>
-<td>78.5</td>
-<td>60.1</td>
-<td>89.0</td>
-<td>63.2</td>
-<td>17.2</td>
-<td>126.9</td>
-<td>880×880</td>
-</tr>
-</tbody>
-</table>
-<h3 id="segmentation">Segmentation<a class="headerlink" href="#segmentation" title="Permanent link">&para;</a></h3>
-<p><img alt="Pareto front – segmentation" src="https://storage.googleapis.com/com-roboflow-marketing/rf-detr/rf_detr_1-4_latency_accuracy_instance_segmentation.png" style="max-width: 840px; height: auto;" /></p>
-<table>
-<thead>
-<tr>
-<th>Architecture</th>
-<th>COCO AP<sub>50</sub></th>
-<th>COCO AP<sub>50:95</sub></th>
-<th>Latency (ms)</th>
-<th>Params (M)</th>
-<th>Resolution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RF-DETR-Seg-N</td>
-<td>63.0</td>
-<td>40.3</td>
-<td>3.4</td>
-<td>33.6</td>
-<td>312×312</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-S</td>
-<td>66.2</td>
-<td>43.1</td>
-<td>4.4</td>
-<td>33.7</td>
-<td>384×384</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-M</td>
-<td>68.4</td>
-<td>45.3</td>
-<td>5.9</td>
-<td>35.7</td>
-<td>432×432</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-L</td>
-<td>70.5</td>
-<td>47.1</td>
-<td>8.8</td>
-<td>36.2</td>
-<td>504×504</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-XL</td>
-<td>72.2</td>
-<td>48.8</td>
-<td>13.5</td>
-<td>38.1</td>
-<td>624×624</td>
-</tr>
-<tr>
-<td>RF-DETR-Seg-2XL</td>
-<td>73.1</td>
-<td>49.9</td>
-<td>21.8</td>
-<td>38.6</td>
-<td>768×768</td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -2360,10 +2013,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.tabs.link", "content.code.copy", "navigation.expand", "navigation.tabs", "content.code.annotate", "navigation.tracking", "content.tooltips", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link", "content.code.copy", "navigation.expand", "navigation.tabs", "content.code.annotate", "navigation.tracking", "content.tooltips", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
